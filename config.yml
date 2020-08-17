@@ -1,0 +1,12 @@
+template: Hello and welcome, %s
+defaultName: User
+
+logging:
+  loggers:
+    "hk2-logger":
+      level: ALL  # levels: OFF, ERROR, WARN, INFO, DEBUG, TRACE, ALL
+      additive: false
+      appenders:
+        - type: console
+          threshold: ALL
+          timeZone: UTC
